@@ -1,156 +1,61 @@
-{
-  "methodConfig": [
-    {
-      "name": [{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService"}],
-      "timeout": "60s",
-      "retryPolicy": {
-        "maxAttempts": 5,
-        "initialBackoff": "1s",
-        "maxBackoff": "60s",
-        "backoffMultiplier": 1.3,
-        "retryableStatusCodes": ["UNAVAILABLE", "UNKNOWN"]
-      }
+    [Log-In,Recovery-admin (V1-Method-Config)]: [{Google E-Mail:(G-Mail)'google.analytics.admin.v1.Analytics.Admin.Service'}]
+      'timeout': 60 min
+      'Retry-Policy':{MFA Multi-Factor-Authentication} o
+      'Max-Attempts':10 w/option for 'fingerprint' and Face-Me (retina) Verification' for PRO or Business Model.
+      'Initial-Backoff":"2s",
+       "Max-Backoff": "60s",
+       "Back-off-Multiplier":1.
+       "Retryable-Status-Codes": ["UNAVAILABLE", "UNKNOWN" 'More-Info' 'Metered-Phone-Number''Reliable Fingerprint', option/lockscreen 'Face-Me Verify','Google Cam/Android Cam' or 'Google Administrator'//Executive approval.}
     },
-    {
-      "name": [
-        {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetAccount"
-        },
-        {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListAccounts"
-        },
-        {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteAccount"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateAccount"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ProvisionAccountTicket"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetProperty"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListProperties"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteProperty"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateProperty"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateProperty"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetUserLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "BatchGetUserLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListUserLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "AuditUserLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateUserLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "BatchCreateUserLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateUserLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "BatchUpdateUserLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteUserLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "BatchDeleteUserLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetWebDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateWebDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateWebDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListWebDataStreams"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetIosAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteIosAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateIosAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateIosAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListIosAppDataStreams"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetAndroidAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteAndroidAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateAndroidAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateAndroidAppDataStream"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListAndroidAppDataStreams"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetEnhancedMeasurementSettings"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateEnhancedMeasurementSettings"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateFirebaseLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateFirebaseLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteFirebaseLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListFirebaseLinks"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "GetGlobalSiteTag"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "CreateGoogleAdsLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "UpdateGoogleAdsLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "DeleteGoogleAdsLink"
-        }, {
-          "service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
-          "method": "ListGoogleAdsLinks"
-        }
+    {:"name":} 
+        {"service": "google.analytics.admin.Main.Analytics.Google Services",
+          'Sign up';'Recover';'Get Accounts'},
+        {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListAccounts"},
+        {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "DeleteAccounts}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "UpdateAccount"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ProvisionAccountTicket"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "GetProperty"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListProperties"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "DeleteProperty"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "CreateProperty"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "UpdateProperty"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "GetUserLink"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "Batch.List.User-Links"}, {"service": "google.analytics.admin.v1alpha.Analytics.Admin.Service",
+          "method": "ListUserLinks"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "AuditUserLinks"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "CreateUserLink"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "BatchCreateUserLinks"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "UpdateUserLink"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "BatchUpdateUserLinks"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "DeleteUserLink},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "BatchDeleteUserLinks"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "Google Admins:"Recover-Web-Data-/Stream"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "UpdateWebDataStream"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "IAM Admin/Create-Web-Data-Stream}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListWebDataStreams" Purpose'??'? Admin Employee 'Privacy','$$$'}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "met: " AppDataStream}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "DeleteIos.AppDataStream},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "UpdateIos.AppDataStream}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "CreateIosAppDataStream"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListIosAppDataStreams"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "GetAndroidAppData"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "DeleteAndroidAppDataStream"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "UpdateAndroidAppDataStream}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "CreateAndroidAppDataStream"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListAndroidAppDataStreams"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "GetEnhancedMeasurementSettings"},{"service": "google.analytics.admin.v1alpha.AnalyticsAdminService"}
+          "method": "UpdateEnhancedMeasurementSettings"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "CreateFirebaseLink"}, {"service":"google.analytics.admin.v1alpha.AnalyticsAdminService",6⁶7
+          "method": 'UpdateFirebaseLink'}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "DeleteFirebaseLink"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListFirebaseLinks"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "GetGlobalSiteTag"0}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method":$$"Create-Google-Ads_Link"}$$ {"service "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method":$$"UpdateGoogleAdsLink")}$ {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method":$  "DeleteGoogleAdsLink"}, {"service": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "method": "ListGoogleAdsLinks"}
       ],
       "timeout": "60s"
     }
